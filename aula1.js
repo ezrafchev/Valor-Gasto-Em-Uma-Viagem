@@ -18,7 +18,7 @@ console.log("O valor gasto para percorrer 540km é: " + valor_gasto);
 
 
 
-/* Por exemplo: O gps cria um desvio e você percorre 100km a mais, ou o posto de gasolina está fechado e você precisa andar mais 20km para encontrar outro posto.
+/* Por exemplo: O gps cria um desvio e você percorre 100km a mais.
 */
 
 
