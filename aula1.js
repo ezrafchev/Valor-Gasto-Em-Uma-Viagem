@@ -26,7 +26,7 @@ console.log("O valor gasto para percorrer 540km é: " + valor_gasto);
 
 distancia_km = distancia_km + 100;
 let valor_gasto_2 = (distancia_km / gasto_medio_combustivel) * preço_combustivel;
-console.log("O valor gasto para percorrer 640km é: " + valor_gasto_2);
+console.log("O valor gasto para percorrer 640km é: " + valor_gasto_2.toFixed(2));
 
 /* Suponhamos que o carro tenha um consumo de combustível maior que o esperado, por exemplo, 5km/l.*/
 
