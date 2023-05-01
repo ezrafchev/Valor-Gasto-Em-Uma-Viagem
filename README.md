@@ -1,4 +1,4 @@
-#	Este é um desafio de Código em Javascript para calcular o valor gasto em uma viagem de carro :car:
+#	Este é um  Código em Javascript para calcular o valor gasto em uma viagem de carro :car:
 
 * Declarei 3 variáveis 
 
