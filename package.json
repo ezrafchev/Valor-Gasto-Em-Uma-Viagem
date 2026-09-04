@@ -1,0 +1,12 @@
+{
+  "name": "calculadora-custo-viagem",
+  "version": "1.0.0",
+  "description": "Calculadora de custos de viagem de carro via terminal.",
+  "main": "aula1.js",
+  "scripts": {
+    "start": "node aula1.js",
+    "test": "node --test"
+  },
+  "keywords": ["viagem", "combustivel", "calculadora"],
+  "license": "MIT"
+}
