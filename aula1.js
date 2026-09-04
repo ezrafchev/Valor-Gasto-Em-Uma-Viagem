@@ -117,10 +117,12 @@ function lerArgumentos(argumentos) {
     else if (arg === '-h' || arg === '--ajuda') options.ajuda = true;
     else if (aliases[arg]) {
       const value = argumentos[index + 1];
-      if (!value || value.startsWith('-')) throw new Error(`Informe um valor para ${arg}.`);
+      if (!value || aliases[value] || value === '--ida-volta' || value === '-h' || value === '--ajuda') {
+        throw new Error(`Informe um valor para ${arg}.`);
+      }
       options[aliases[arg]] = value.replace(',', '.');
       index += 1;
-    } else throw new Error(`Opção desconhecida: ${arg}. Use --ajuda para ver as opções.`);
+    }
   }
   return options;
 }
