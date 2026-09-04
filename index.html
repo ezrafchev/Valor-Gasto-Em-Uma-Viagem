@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planeje o custo da sua próxima viagem de carro com clareza.">
+    <meta name="theme-color" content="#08111f">
+    <title>Rota — Planeje sua viagem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header container">
+      <a class="brand" href="#top" aria-label="Rota, início"><span class="brand-mark">R</span> rota</a>
+      <a class="header-link" href="#calculadora">Calcular viagem <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="eyebrow">Planejamento sem surpresas</p>
+        <h1>Todo grande caminho<br><em>começa com clareza.</em></h1>
+        <p class="hero-copy">Descubra o custo real da sua viagem em segundos — combustível, pedágios, imprevistos e a divisão com quem vai junto.</p>
+        <div class="hero-meta"><span><i></i> Estimativa inteligente</span><span>Feito para a estrada</span></div>
+      </section>
+
+      <section class="calculator-wrap container" id="calculadora" aria-labelledby="calculator-title">
+        <div class="calculator-heading">
+          <div>
+            <p class="eyebrow">Sua próxima rota</p>
+            <h2 id="calculator-title">Monte a estimativa.</h2>
+          </div>
+          <button class="text-button" id="reset-button" type="button">Recomeçar <span aria-hidden="true">↺</span></button>
+        </div>
+
+        <div class="calculator-grid">
+          <form id="trip-form" novalidate>
+            <fieldset>
+              <legend>O essencial</legend>
+              <div class="fields two-columns">
+                <label>Distância de ida <span>km</span><input id="distance" name="distance" inputmode="decimal" value="540" required></label>
+                <label>Consumo do carro <span>km/l</span><input id="efficiency" name="efficiency" inputmode="decimal" value="12" required></label>
+                <label>Preço do combustível <span>R$/l</span><input id="fuel-price" name="fuel-price" inputmode="decimal" value="5,39" required></label>
+                <label>Viajantes <span>pessoas</span><input id="passengers" name="passengers" inputmode="numeric" value="1" required></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Custos no caminho <small>opcional</small></legend>
+              <div class="fields two-columns">
+                <label>Pedágios <span>R$</span><input id="tolls" name="tolls" inputmode="decimal" value="0"></label>
+                <label>Estacionamento <span>R$</span><input id="parking" name="parking" inputmode="decimal" value="0"></label>
+              </div>
+            </fieldset>
+
+            <div class="options">
+              <label class="toggle"><input id="round-trip" type="checkbox"><span class="toggle-control" aria-hidden="true"></span><span><b>Ida e volta</b><small>Inclui o retorno na rota</small></span></label>
+              <label class="reserve-label">Reserva para imprevistos <output id="reserve-value" for="reserve">10%</output><input id="reserve" type="range" min="0" max="30" step="5" value="10"></label>
+            </div>
+            <p class="form-error" id="form-error" role="alert"></p>
+          </form>
+
+          <aside class="result-card" aria-live="polite">
+            <p class="result-label">Investimento estimado</p>
+            <p class="total" id="total">R$ 0,00</p>
+            <p class="total-description" id="total-description">para sua viagem</p>
+            <div class="result-divider"></div>
+            <dl class="breakdown">
+              <div><dt>Combustível</dt><dd id="fuel-cost">R$ 0,00</dd></div>
+              <div><dt>Pedágios e estacionamento</dt><dd id="extras-cost">R$ 0,00</dd></div>
+              <div><dt>Reserva <span id="reserve-percent">10%</span></dt><dd id="reserve-cost">R$ 0,00</dd></div>
+            </dl>
+            <div class="per-person"><span>Por pessoa</span><strong id="per-person">R$ 0,00</strong></div>
+            <button class="share-button" id="copy-button" type="button">Copiar resumo <span aria-hidden="true">↗</span></button>
+          </aside>
+        </div>
+        <p class="fine-print">Os valores são uma estimativa. Considere mudanças de rota, trânsito e preço do combustível.</p>
+      </section>
+
+      <section class="principles container" aria-label="Benefícios">
+        <article><span>01</span><h2>Sem conta de cabeça.</h2><p>Todos os custos importantes em uma única visão, calculados instantaneamente.</p></article>
+        <article><span>02</span><h2>Mais gente, mesma liberdade.</h2><p>Veja na hora quanto cada pessoa investe para aproveitar o caminho.</p></article>
+        <article><span>03</span><h2>Pronto para o inesperado.</h2><p>Inclua uma margem de segurança e viaje com tranquilidade.</p></article>
+      </section>
+    </main>
+    <footer class="container"><span>ROTA / 2026</span><span>Planeje bem. Vá mais longe.</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

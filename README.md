@@ -1,8 +1,19 @@
-# Calculadora de custo de viagem 🚗
+# Rota — Calculadora de custo de viagem 🚗
 
-Uma calculadora de terminal para planejar viagens de carro com mais segurança. Além do combustível, ela considera pedágios, estacionamento, margem para imprevistos, ida e volta e divisão do total entre passageiros.
+Uma calculadora de viagens elegante, responsiva e pronta para uso no navegador ou no terminal. Além do combustível, ela considera pedágios, estacionamento, margem para imprevistos, ida e volta e divisão do total entre passageiros.
 
-## Começar
+## Site no GitHub Pages
+
+O site está pronto para publicação: os arquivos `index.html`, `styles.css` e `app.js` não dependem de compilação nem de servidor.
+
+1. No GitHub, acesse **Settings → Pages** do repositório.
+2. Em **Build and deployment**, selecione **Deploy from a branch**.
+3. Escolha a branch principal e a pasta **`/ (root)`**, depois salve.
+4. Aguarde a publicação e abra o link fornecido pelo GitHub.
+
+A página inclui cálculo instantâneo, design adaptado para celular, controles acessíveis, reserva de imprevistos e um botão para copiar o resumo da viagem.
+
+## Uso no terminal
 
 O projeto não possui dependências externas. É necessário apenas o [Node.js](https://nodejs.org/) 18 ou superior.
 
@@ -43,6 +54,7 @@ Valores decimais aceitam ponto ou vírgula, por exemplo `5.39` ou `5,39`.
 ```bash
 npm test
 node aula1.js --ajuda
+node --check app.js
 ```
 
 As funções também podem ser importadas em outro projeto:
