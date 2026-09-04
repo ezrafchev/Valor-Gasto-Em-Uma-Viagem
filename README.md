@@ -4,11 +4,11 @@ Uma calculadora de viagens elegante, responsiva e pronta para uso no navegador o
 
 ## Site no GitHub Pages
 
-O site está pronto para publicação: os arquivos `index.html`, `styles.css` e `app.js` não dependem de compilação nem de servidor.
+O site está pronto para publicação: os arquivos `index.html`, `styles.css` e `app.js` não dependem de compilação nem de servidor. O workflow versionado em `.github/workflows/deploy-pages.yml` faz o deploy automaticamente a cada `push` nas branches configuradas.
 
 1. No GitHub, acesse **Settings → Pages** do repositório.
-2. Em **Build and deployment**, selecione **Deploy from a branch**.
-3. Escolha a branch principal e a pasta **`/ (root)`**, depois salve.
+2. Em **Build and deployment**, selecione **GitHub Actions** como fonte.
+3. Faça push da branch e acompanhe o workflow **Deploy GitHub Pages** na aba **Actions**.
 4. Aguarde a publicação e abra o link fornecido pelo GitHub.
 
 A página inclui cálculo instantâneo, design adaptado para celular, controles acessíveis, reserva de imprevistos e um botão para copiar o resumo da viagem.

@@ -62,7 +62,7 @@
           </form>
 
           <aside class="result-card" aria-live="polite">
-            <p class="result-label">Investimento estimado</p>
+            <div class="result-topline"><p class="result-label">Investimento estimado</p><span class="live-status"><i></i> AO VIVO</span></div>
             <p class="total" id="total">R$ 0,00</p>
             <p class="total-description" id="total-description">para sua viagem</p>
             <div class="result-divider"></div>
@@ -72,6 +72,10 @@
               <div><dt>Reserva <span id="reserve-percent">10%</span></dt><dd id="reserve-cost">R$ 0,00</dd></div>
             </dl>
             <div class="per-person"><span>Por pessoa</span><strong id="per-person">R$ 0,00</strong></div>
+            <div class="trip-facts" aria-label="Dados da estimativa">
+              <div><span>Autonomia usada</span><strong id="liters-needed">0,0 L</strong></div>
+              <div><span>Custo por km</span><strong id="cost-per-km">R$ 0,00</strong></div>
+            </div>
             <button class="share-button" id="copy-button" type="button">Copiar resumo <span aria-hidden="true">↗</span></button>
           </aside>
         </div>
